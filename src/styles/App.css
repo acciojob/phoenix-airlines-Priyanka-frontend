@@ -1,1 +1,217 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 70px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.nav-home {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+}
+
+.hero {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.container > h1 {
+  margin-bottom: 30px;
+}
+
+.primary-btn {
+  border: none;
+  background: #1d4ed8;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.trip-type {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.trip-btn {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.trip-btn.active {
+  background: #1d4ed8;
+  color: white;
+}
+
+.search-form,
+.booking-form {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.error {
+  color: #dc2626;
+  margin: 6px 0 0;
+  font-size: 14px;
+}
+
+.results {
+  margin-top: 35px;
+}
+
+.flight-card {
+  background: white;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.flight-card h3 {
+  margin-top: 0;
+}
+
+.book-flight {
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #1d4ed8;
+  color: white;
+}
+
+.selected-flight {
+  background: white;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form {
+  max-width: 600px;
+}
+
+.confirmation {
+  text-align: center;
+}
+
+.success-icon {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: white;
+  font-size: 35px;
+}
+
+.confirmation-card {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.confirmation-card hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+  .flight-card {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
